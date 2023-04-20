@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Lato";
+    src: url("Lato/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Lato-bold";
+    src: url("Lato/Lato-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+h1 {
+    font-family: 'Lato-bold', sans-serif;
+}
+body, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+}
+
+.currentScoreDisplay {
+    border-radius: 1.5vh;
+    width: 40vh;
+    display: inline-block;
+}
+
+#player1CurrentScore, #player2CurrentScore, h1 {
+    color: antiquewhite;
+}
+
+.dice_icon {
+    display: inline-block;
+    max-width: 20vh;
+}

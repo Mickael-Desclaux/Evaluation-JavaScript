@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's roll !</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid fs-4">
+        <div class="row">
+            <h1 class="bg-danger text-center p-4 fs-1">LET'S ROLL !</h1>
+        </div>
+        <div class="row text-center">
+            <h2><button class="btn btn-lg btn-danger mt-5 mb-5 fs-3" id="newGame">NEW
+                    GAME</button></h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 text-center pt-5">
+                <h3 class="fs-1">PLAYER 1</h3>
+                <p class="mt-3 mb-5 fs-1" id="player1GlobalScore">1</p>
+                <div class="currentScoreDisplay bg-danger">
+                    <p class="m-2">CURRENT</p>
+                    <p class="m-2" id="player1CurrentScore">7</p>
+                </div>
+            </div>
+            <div class="col-lg-2 pt-5 text-center">
+                <div class="dice_icon">
+                    <img src="Images/dice_six.png" alt="dice" class="img-fluid" id="dice_img">
+                </div> <br>
+                <button class="btn btn-danger mt-5 mb-3 fs-5" id="roll">ROLL
+                    DICE</button><br>
+                <button class="btn btn-danger mt-2 mb-3 fs-5" id="hold">HOLD</button>
+            </div>
+            <div class="col-lg-5 text-center pt-5">
+                <h3 class="fs-1">PLAYER 2</h3>
+                <p class="mt-3 mb-5 fs-1" id="player2GlobalScore">5</p>
+                <div class="currentScoreDisplay bg-danger">
+                    <p class="m-2">CURRENT</p>
+                    <p class="m-2" id="player2CurrentScore">6</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
