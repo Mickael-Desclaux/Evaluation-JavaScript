@@ -5,10 +5,13 @@ const Player1GlobalScore = document.getElementById('player1GlobalScore')
 const Player2GlobalScore = document.getElementById('player2GlobalScore')
 const Player1CurrentScore = document.getElementById('player1CurrentScore')
 const Player2CurrentScore = document.getElementById('player2CurrentScore')
+const playerOne = document.getElementById('playerOne')
+const playerTwo = document.getElementById('playerTwo')
 let dice = [1, 2, 3, 4, 5, 6]
 const dice_icon = document.getElementById('dice_img')
 let player
 let dice_result
+
 
 const resetStats = () => {
     Player1CurrentScore.innerText = 0
@@ -20,9 +23,10 @@ const resetStats = () => {
 const newGame = () => {
     btnRoll.addEventListener('click', rollDice)
     btnHold.addEventListener('click', hold)
+    player = 'player1'
+    playerTurn()
     resetStats()
     alert('Player 1 starts')
-    player = 'player1'
 }
 
 const changeImage = () => {
@@ -69,6 +73,7 @@ const addCurrentScore = () => {
 }
 
 const rollDice = () => {
+    addClass()
     dice_result = dice[(Math.floor(Math.random() * dice.length))]
     changeImage()
     addCurrentScore()
@@ -85,7 +90,6 @@ const hold = () => {
         Player2CurrentScore.innerText = 0
         player = 'player1'
     }
-
     if (Number(Player1GlobalScore.innerText) >= 100) {
         alert('Player 1 wins !')
         btnRoll.removeEventListener('click', rollDice)
@@ -96,6 +100,25 @@ const hold = () => {
         btnHold.removeEventListener('click', hold)
         alert('Player 2 wins !')
         return
+    } else {playerTurn()}
+}
+
+const addClass = () => {
+    dice_icon.classList.add('dice_animation')
+    setTimeout(removeClass, 300)
+}
+
+const removeClass = () => {
+    dice_icon.classList.remove('dice_animation')
+}
+
+const playerTurn = () => {
+    if (player == 'player1') {
+        playerTwo.classList.remove('player_turn')
+        playerOne.classList.add('player_turn')
+    } else {
+        playerOne.classList.remove('player_turn')
+        playerTwo.classList.add('player_turn')
     }
 }
 
