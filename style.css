@@ -67,12 +67,6 @@ body, h2, h3, p {
     margin-left: 0.25em;
 }
 
-#newGame_icon {
-    display: inline-block;
-    vertical-align: middle;
-    height: 1em;
-}
-
 @media screen and (max-width: 340px) {
     .currentScoreDisplay {
         width: 25vh;
