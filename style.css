@@ -3,22 +3,24 @@
     src: url("Lato/Lato-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Lato-bold";
     src: url("Lato/Lato-Bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 .background {
     background-color: antiquewhite;
     min-height: 100vh;
 }
+
 h1 {
     font-family: 'Lato-bold', sans-serif;
 }
+
 body, h2, h3, p {
     font-family: 'Lato', sans-serif;
 }
@@ -43,17 +45,39 @@ body, h2, h3, p {
 }
 
 @keyframes dice_shake {
-    0% {transform: rotate(0deg)}
-    10% {transform: rotate(10deg)}
-    20% {transform: rotate(15deg);}
-    30% {transform: rotate(20deg)}
-    40% {transform: rotate(30deg);}
-    50% {transform: rotate(35deg)}
-    60% {transform: rotate(25deg);}
-    70% {transform: rotate(20deg)}
-    80% {transform: rotate(10deg);}
-    90% {transform: rotate(5deg)}
-    100% {transform: rotate(0deg)}
+    0% {
+        transform: rotate(0deg)
+    }
+    10% {
+        transform: rotate(10deg)
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    30% {
+        transform: rotate(20deg)
+    }
+    40% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(35deg)
+    }
+    60% {
+        transform: rotate(25deg);
+    }
+    70% {
+        transform: rotate(20deg)
+    }
+    80% {
+        transform: rotate(10deg);
+    }
+    90% {
+        transform: rotate(5deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
 }
 
 .player_turn::after {
