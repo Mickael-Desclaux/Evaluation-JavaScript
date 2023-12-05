@@ -135,5 +135,14 @@ const playerTurn = () => {
     }
 }
 
+document.getElementById('rulesBtn').addEventListener('click', function() {
+    document.getElementById('infoBubble').style.display = 'block';
+});
+
+document.getElementById('closeBtn').addEventListener('click', function() {
+    document.getElementById('infoBubble').style.display = 'none';
+});
+
+
 btnNewGame.addEventListener('click', newGame)
 

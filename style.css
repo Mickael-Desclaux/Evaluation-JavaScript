@@ -91,9 +91,16 @@ body, h2, h3, p {
     margin-left: 0.25em;
 }
 
+#infoBubble {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
 @media screen and (max-width: 340px) {
     .currentScoreDisplay {
         width: 25vh;
     }
 }
-

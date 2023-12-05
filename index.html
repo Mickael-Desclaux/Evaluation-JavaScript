@@ -18,11 +18,27 @@
             <div class="row">
                 <h1 class="bg-danger text-center p-4 fs-1">LET'S ROLL !</h1>
             </div>
+            <div class="d-flex justify-content-end m-2">
+                <button id="rulesBtn" class="btn btn-lg btn-danger">What are the rules?</button>
+                <div id="infoBubble" style="display:none;" class="ms-4">
+                    <h4 class="d-flex justify-content-center">Rules of the game</h4>
+                    <p class="d-flex text-center">This game is quite simple : the first player to reach 100
+                        points wins !<br>
+                        To earn points, you have to roll the dice, and your current score will be updated with the
+                        result of the roll. You just have to click on the "Hold" button to save your score and pass the
+                        turn to the other player.
+                        But it's not as easy as it looks : if the dice roll is a 1, your current score will be
+                        erased and your turn will be over.<br>Be cautious or take risks to win, the choice is yours!</p>
+                    <div class="d-flex justify-content-center">
+                        <button id="closeBtn" class="btn btn-lg btn-danger">Close</button>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
             <div class="row text-center">
                 <h2>
-                    <button class="btn btn-lg btn-danger mt-5 mb-3 fs-3"
+                    <button class="btn btn-lg btn-danger mt-3 mb-3 fs-3"
                             id="newGame">NEW GAME
                     </button>
                 </h2>
